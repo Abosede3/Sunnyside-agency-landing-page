@@ -1341,7 +1341,7 @@ footer{
   .main-hero{
     background: url("../images/mobile/image-header.jpg");
     background-position: bottom;
-    height: 600px;
+    height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -1349,7 +1349,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.5rem 2rem 1rem 2rem;
+        padding: 3.5rem 2rem 1rem 2rem;
   
             ul{
                 display: none;
@@ -1358,12 +1358,13 @@ footer{
 
       .hamburger{
         cursor: pointer;
-        display: contents;
+        display: contents !important;
+        
 
       }
 
       .hero-title{
-        padding: 1rem 0;
+        padding: 1rem 0 2rem 0;
         h2{
           font-size: 3rem;
           letter-spacing: 4px;
@@ -1396,7 +1397,7 @@ footer{
       .arrow{
         
         img{
-          top: 60px;
+          top: 90px;
           animation: none;
         }
       }
@@ -1849,7 +1850,6 @@ footer{
       }
   }
 }
-
 
 
 

@@ -1298,7 +1298,7 @@ footer .contact-icon li img {
   .main-hero {
     background: url("../images/mobile/image-header.jpg");
     background-position: bottom;
-    height: 600px;
+    height: 650px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1313,17 +1313,17 @@ footer .contact-icon li img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.5rem 2rem 1rem 2rem;
+    padding: 3.5rem 2rem 1rem 2rem;
   }
   .main-hero nav ul {
     display: none;
   }
   .main-hero .hamburger {
     cursor: pointer;
-    display: contents;
+    display: contents !important;
   }
   .main-hero .hero-title {
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
   }
   .main-hero .hero-title h2 {
     font-size: 3rem;
@@ -1358,7 +1358,7 @@ footer .contact-icon li img {
     }
   }
   .main-hero .arrow img {
-    top: 60px;
+    top: 90px;
     -webkit-animation: none;
             animation: none;
   }
