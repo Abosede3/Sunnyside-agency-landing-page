@@ -1,0 +1,1199 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+// Primary colors
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$graphic-text: hsl(167, 40%, 24%);
+$photography-text: hsl(198, 62%, 26%);
+$footer: hsl(168, 34%, 41%);
+
+// Neutral colors
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+// Font type
+$barlow: 'Barlow', sans-serif;
+$fraunces: 'Fraunces', serif;
+$bold-900: 900;
+$bold-700: 700;
+$font-600:600;
+
+// End of global variables
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 18px;
+  background-color: #fff;
+}
+
+
+/*
+    WEB VIEW RESPONSIVENESS
+*/
+
+// Header
+.main-hero{
+    background: url("../images/desktop/image-header.jpg");
+    background-position: bottom center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+
+
+      nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content:space-between;
+        margin-bottom: 2rem;
+        padding:2.5rem;
+
+          .logo{
+            cursor: pointer;
+            width: 200px;
+          }
+
+          ul{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+            align-content: center;
+            justify-content: space-between;
+
+              li{
+                list-style-type: none;
+                padding: 0 1rem;
+
+                  a{
+                    text-decoration: none;
+                    color: $White;
+                    font-family: $barlow;
+                  }
+                  a:hover{
+                    color: $Very-dark-desaturated-blue;
+                  }
+                  .btn-menu{
+                    background-color: $White;
+                    border: none;
+                    padding: 0.8rem 1.3em;
+                    border-radius: 30px;
+                    color: #000;
+                    font-family: $barlow;
+                  }
+                  .btn-menu:hover{
+                    background-color: $Very-dark-desaturated-blue;
+                    color: $White;
+                  }
+              }
+              
+          }
+          
+          .hamburger{
+            display: none;
+          }
+      }
+
+      .hero-title{
+        text-align: center;
+        padding: 1.7rem 0;
+      
+        h2{
+          font-size: 2.4rem;
+          font-family: $barlow;
+          color: $White;
+          letter-spacing: 4px;
+          text-transform: uppercase;
+
+          span::before {
+            content: "  ";
+            animation: animate linear 3s infinite 3s;
+            padding-left: 10px;
+        }
+      
+        @keyframes animate {
+      
+            0% {
+                content: "Creative";
+                color: #174f41;
+            }
+      
+            50% {
+                content: "Innovative";
+                color: $Soft-red;
+            }
+      
+            100% {
+                content: "World No 1";
+                color: $Yellow;
+            }
+        }
+      
+      } 
+      }
+
+      .arrow{
+        position: relative;
+       img{
+         width: 30px;
+         position: absolute;
+         left: 49%;
+         top: 60px;
+         animation: arrow-up-down linear 3s infinite alternate-reverse;
+       }
+       @keyframes arrow-up-down {
+         0%{
+           bottom:120px;
+         }
+         50%{
+           top: 120px;
+         }
+        
+       }
+      }
+}
+
+/*
+    End of Main Hero
+*/
+
+
+ //   START OF TRANSFROM SECTION
+
+.transform{
+  .row{
+    display: flex;
+    flex-direction:row;
+
+    .col-two{
+      height: 500px;
+      height: 600px;
+      width: 100%;
+      background: url("/images/desktop/image-transform.jpg");
+      background-position: center center;
+      background-size: cover;
+    
+    }
+      .col-one{
+        background-color: $White;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+
+          h2{
+            padding: 12rem 8rem 0 8rem;
+            color: $Very-dark-desaturated-blue;
+            font-size: 2.5rem;
+            font-family: $fraunces;
+            text-align: left;
+          }
+
+          p{
+            padding: 1.5rem 5rem 2rem 8rem;
+            font-family: $barlow;
+            color: $Grayish-blue;
+            text-align: left;
+            font-size: 15px;
+
+            
+          }
+          .learn-more{
+            padding: 0 18rem 0 0;
+            color: $Very-dark-desaturated-blue;
+            font-size: 18px;
+            font-weight: 900;
+            text-align: left;
+            text-decoration: underline 4px $Yellow;
+          }
+          .learn-more:hover{
+            text-decoration: underline dotted 6px rgb(232, 187, 10);
+          }
+      }
+
+      .col-three{
+        display: none;
+      }
+      
+  }
+
+
+}
+
+/*
+    End of Transform
+*/
+
+// Start of Stand Out
+
+.stand-out{
+  .row{
+    display: flex;
+    flex-direction: row;
+
+    .col-one{
+      height: 600px;
+      width: 100%;
+      background: url("/images/desktop/image-stand-out.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+    .col-one-mobile{
+      display: none;
+    }
+    .col-two{
+      background-color: $White;
+      text-align: center;
+      width: 100%;
+      height: 600px;
+
+
+      h2{
+        padding: 12rem 8rem 0 6rem;
+        color: $Very-dark-desaturated-blue;
+        font-size: 2rem;
+        font-family: $fraunces;
+        text-align: left;
+      }
+
+      p{
+        padding: 1.5rem 5rem 2rem 6rem;
+        font-family: $barlow;
+        color: $Grayish-blue;
+        text-align: left;
+        font-size: 15px;
+
+        
+      }
+      .learn-more{
+        padding: 0 22rem 0 0;
+        color: $Very-dark-desaturated-blue;
+        font-size: 18px;
+        font-weight: 900;
+        text-align: left;
+        text-decoration: underline 4px $Soft-red;
+      }
+      .learn-more:hover{
+        text-decoration: underline dotted 6px $Soft-red;
+      }
+    }
+
+}
+}
+
+/*
+    End of Stand Out
+*/
+
+// Start of Designs
+
+.design-content{
+
+    .row{
+        display: flex;
+        flex-direction: row;
+        .graphics-content{
+          background: url("/images/desktop/image-graphic-design.jpg");
+          height: 600px;
+          width: 100%;
+          background-position: top center;
+          background-size:  cover;
+          justify-content: center;
+          display: flex;
+          flex-direction: column;
+          
+
+          h3{
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 22rem;
+            color: $graphic-text;
+            font-family: $fraunces;
+
+          }
+          p{
+            text-align: center;
+            padding: 2rem 7rem;
+            font-family: $barlow;
+            font-size: 18px;
+            color: $graphic-text;
+            line-height: 25px;
+          }
+        }
+      .photography-content{
+        background-image: url("/images/desktop/image-photography.jpg");
+        height: 400px;
+        width: 50%;
+        height: 600px;
+        width: 100%;
+        background-position: top center ;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3{
+          text-align: center;
+          font-size: 2rem;
+          padding-top: 22rem;
+          color: $photography-text;
+          font-family: $fraunces;
+
+        }
+        p{
+          text-align: center;
+          padding: 2rem 7rem;
+          font-family: $barlow;
+          font-size: 18px;
+          color: $photography-text;
+          line-height: 25px;
+        }
+      }
+    }
+}
+
+
+/*
+    End of Design Content
+*/
+
+// Start of Testimonial
+
+.testimoial{
+  background-color: $White;
+  padding: 0 4rem;
+
+  .testimonial-title{
+    padding: 2rem;
+
+    h2{
+      text-align: center;
+      font-family: $barlow;
+      font-size: 2rem;
+      color: $Very-dark-grayish-blue;
+    }
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 10rem;
+
+    .testimonial-one{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+
+     img{
+       width: 130px;
+       border-radius: 100%;
+       
+     }
+
+     p{
+       font-family: $barlow;
+       text-align: center;
+       color: $Dark-grayish-blue;
+       padding: 2rem;
+     }
+     h5{
+       text-align: center;
+       color: $Very-dark-desaturated-blue;
+       padding: 1rem 0;
+       font-weight: $bold-900;
+       font-size: 1.7rem;
+
+     }
+     h3{
+      font-family: $barlow;
+      color: $Grayish-blue;
+      font-size: 1.3rem;
+     }
+    }
+
+    .testimonial-two{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     align-content: center;
+
+        img{
+          width: 130px;
+          border-radius: 100%;
+          
+        }
+
+        p{
+          font-family: $barlow;
+          text-align: center;
+          color: $Dark-grayish-blue;
+          padding: 2rem;
+        }
+        h5{
+          text-align: center;
+          color: $Very-dark-desaturated-blue;
+          padding: 1rem 0;
+          font-weight: $bold-900;
+          font-size: 1.7rem;
+
+        }
+        h3{
+          font-family: $barlow;
+          color: $Grayish-blue;
+          font-size: 1.3rem;
+        }
+     
+    }
+
+    .testimonial-three{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+ 
+         img{
+           width: 130px;
+           border-radius: 100%;
+           
+         }
+ 
+         p{
+           font-family: $barlow;
+           text-align: center;
+           color: $Dark-grayish-blue;
+           padding: 2rem;
+         }
+         h5{
+           text-align: center;
+           color: $Very-dark-desaturated-blue;
+           padding: 1rem 0;
+           font-weight: $bold-900;
+           font-size: 1.7rem;
+ 
+         }
+         h3{
+           font-family: $barlow;
+           color: $Grayish-blue;
+           font-size: 1.3rem;
+         }
+    }
+  }
+}
+
+
+/*
+    End of Testimonial
+*/
+
+// Start of Gallery
+
+.gallery{
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    .gallery-one{
+      width: 25%;
+      background-image: url("/images/desktop/image-gallery-milkbottles.jpg");
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .gallery-two{
+      width: 25%;
+      background-image: url("/images/desktop/image-gallery-orange.jpg");
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .gallery-three{
+      width: 25%;
+      background-image: url("/images/desktop/image-gallery-cone.jpg");
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .gallery-four{
+      width: 25%;
+      background-image: url("/images/desktop/image-gallery-sugarcubes.jpg");
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+}
+
+
+/*
+    End of Gallery
+*/
+
+// Start of Footer
+footer{
+  background-color:  #72ceb7;
+  height: 400px;
+
+  .footer-logo{
+    padding: 5rem 0;
+
+    h1{
+      text-align: center;
+      color:#174f41;
+      font-family: $barlow;
+    }
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li{
+      list-style-type: none;
+      padding: 1.4rem 2rem;
+
+      a{
+        text-decoration: none;
+        color: $footer;
+        font-size: 1.5rem;
+        font-family: $barlow;
+        font-weight: $font-600;
+      }
+      a:hover{
+        color: #174f41;
+      }
+    }
+  }
+
+  .contact-icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    li{
+      list-style-type: none;
+        padding: 1rem 1.4rem;
+
+      img{
+        cursor: pointer;
+      }
+
+    }
+  }
+}
+
+
+// ==============================   END OF WEB VIEW RESPONSIVENESS ====================================
+
+/*
+
+      MMOBILE VOEW 375PX RESPONSIVENESE
+
+*/
+
+@media screen and(max-width: 375px){
+  
+  // Start of Header
+  .main-hero{
+    background: url("../images/mobile/image-header.jpg");
+    background-position: bottom;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 2.5rem 2rem 1rem 2rem;
+
+          ul{
+              display: none;
+          }
+
+          .hamburger{
+              cursor: pointer;
+              display: contents;
+          }
+
+    }
+
+    .hero-title{
+      padding: 1rem 0;
+      h2{
+        font-size: 3rem;
+        letter-spacing: 4px;
+        text-align: center;
+        
+        
+            span::before{
+              content: " Creative";
+              animation: change-color infinite 5s;
+            }
+
+            @keyframes change-color {
+                0%{
+                  color: $White;
+                }
+
+                50%{
+                  color: #174f41;
+                  
+                }
+                100%{
+                  color:hsl(7, 99%, 70%);
+                }
+            }
+      }
+
+    
+    }
+
+      .arrow{
+        
+        img{
+          top: 60px;
+          animation: none;
+        }
+      }
+
+}
+
+/*
+ End of Main Header
+
+*/
+
+
+//Start of transform
+
+.transform{
+
+  .row{
+    display: flex;
+    flex-direction: column;
+
+    .col-one{
+        display: none;
+    }
+
+    .col-two{
+      background: url('../images/mobile/image-transform.jpg');
+      height: 350px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .col-three{
+    display: contents;
+      height: 400px;
+
+          h2{
+              text-align: center;
+              padding: 5rem 2rem 0.9rem 2rem;
+              color: $Very-dark-desaturated-blue;
+              font-family: $fraunces;
+              font-weight: $bold-900;
+              font-size: 2rem;
+          }
+
+          p{
+              text-align: center;
+              font-family: $barlow;
+              color: $Grayish-blue;
+              padding: 1rem 2rem;
+              line-height: 23px;
+          }
+
+          .learn-more{
+            padding: 2rem 0 2rem 0;
+            color: $Very-dark-desaturated-blue;
+            font-size: 18px;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: underline 4px $Yellow;
+          }
+          .learn-more:hover{
+            text-decoration: underline dotted 6px rgb(232, 187, 10);
+          } 
+          
+
+
+    }
+  }
+}
+
+/*
+ End of Transform Section
+
+*/
+
+
+//Start of Stand Out
+
+.stand-out{
+    .row{
+      display: flex;
+      flex-direction: column;
+
+      .col-one{
+        background: url('../images/mobile/image-stand-out.jpg');
+        height: 350px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .col-two{
+        height: 400px;
+        h2{
+            text-align: center;
+            padding: 5rem 2rem 0.9rem 2rem;
+            color: $Very-dark-desaturated-blue;
+            font-family: $fraunces;
+            font-weight: $bold-900;
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+            font-family: $barlow;
+            color: $Grayish-blue;
+            padding: 1rem 1.5rem;
+            line-height: 23px;
+        }
+        .learn-more{
+            padding: 2rem 0 2rem 0 ;
+        }
+      }
+
+      // .col-one-mobile{
+      //   display: contents;
+      //   background: url('../images/mobile/image-stand-out.jpg');
+      //   height: 350px;
+      //   background-position: center;
+      //   background-repeat: no-repeat;
+      //   background-size: cover;
+      // }
+        
+
+  }
+
+
+}
+
+/*
+   End of Stand Out
+
+*/
+
+
+//   Start of Designs
+  .design-content{
+
+    .row{
+      display: flex;
+      flex-direction: column;
+
+        .graphics-content{
+            background: url('../images/mobile/image-graphic-design.jpg');
+            height: 550px;
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+              h3{
+                text-align: center;
+                font-family: $fraunces;
+                font-size: 2rem;
+                color: $graphic-text;
+                padding-top: 15rem;
+            }
+
+            p{
+                text-align: center;
+                padding-bottom: 4.5rem;
+                padding-top: 1.4rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                color: $graphic-text;
+                font-family: $barlow;
+                line-height: 25px;
+            
+            }
+        }
+
+        .photography-content{
+
+          background: url('../images/mobile/image-photography.jpg');
+          height: 550px;
+          background-position: top center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+
+ 
+
+              h3{
+
+                  text-align: center;
+                  font-family: $fraunces;
+                  font-size: 2rem;
+                  color: $photography-text;
+                  padding-top: 15rem;
+                  
+              }
+
+              p{
+
+                  text-align: center;
+                  padding-bottom: 4.5rem;
+                  padding-top: 1.4rem;
+                  padding-right: 1rem;
+                  padding-left: 1rem;
+                  color: $photography-text;
+                  font-family: $barlow;
+                  line-height: 25px;
+              
+
+              }
+            
+        }    
+
+
+    }
+  }
+
+  /*
+
+      END OF DESIGNS
+  */
+
+  // Start of Testimonial
+
+  .testimoial{
+    padding: 0;
+
+    .testimonial-title{
+        text-align: center;
+         padding: 2rem 0;
+
+        h2{
+            font-family: $fraunces;
+            text-transform: uppercase;
+            color: $Grayish-blue;
+            padding: 3rem 0;
+            font-size: 1.5rem;
+        }      
+        
+    }
+
+    .row{
+      display: flex;
+      flex-direction: column;
+
+      .testimonial-one{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 6rem;
+
+            img{
+                border-radius: 50%;
+                width: 30%;
+            }
+
+            p{
+                font-family: $barlow;
+                text-align: center;
+                color: $Dark-grayish-blue;
+                font-size: 1.3rem;
+                padding: 2rem;
+
+
+            }
+            h5{
+                font-size: 1.7rem;
+                font-family: $fraunces;
+                color: $Very-dark-desaturated-blue;
+                padding-bottom: 1rem;
+                font-weight: $bold-900;
+            }
+            h3{
+                font-family: $barlow;
+                color: $Grayish-blue;
+                color: $Grayish-blue;
+                font-size: 1.3rem;
+            }
+
+      }
+
+
+      .testimonial-two{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 6rem;
+
+            img{
+                border-radius: 50%;
+                width: 30%;
+            }
+
+            p{
+                font-family: $barlow;
+                text-align: center;
+                color: $Dark-grayish-blue;
+                font-size: 1.3rem;
+                padding: 2rem 1rem;
+
+
+            }
+            h5{
+                font-size: 1.7rem;
+                font-family: $fraunces;
+                color: $Very-dark-desaturated-blue;
+                padding-bottom: 1rem;
+                font-weight: $bold-900;
+            }
+            h3{
+                font-family: $barlow;
+                color: $Grayish-blue;
+                color: $Grayish-blue;
+                font-size: 1.3rem;
+              }
+       }
+
+
+      .testimonial-three{
+
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-bottom: 6rem;
+
+              img{
+                  border-radius: 50%;
+                  width: 30%;
+              }
+
+              p{
+                  font-family: $barlow;
+                  text-align: center;
+                  color: $Dark-grayish-blue;
+                  font-size: 1.3rem;
+                  padding: 2rem 1rem;
+
+
+              }
+              h5{
+                  font-size: 1.7rem;
+                  font-family: $fraunces;
+                  color: $Very-dark-desaturated-blue;
+                  padding-bottom: 1rem;
+                  font-weight: $bold-900;
+              }
+              h3{
+                  font-family: $barlow;
+                  color: $Grayish-blue;
+                  font-size: 1.3rem;
+              }
+
+      }
+
+    }
+
+  } // end of testimonial curly braces
+
+/*
+    End of Testimonial
+*/
+
+// Start of Gallery
+
+.gallery{
+
+  .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+      .gallery-one{
+        width: 50%;
+        background-position: center center;
+      }
+      .gallery-two{
+        width: 50%;
+      }
+      .gallery-three{
+        width: 50%;
+      }
+      .gallery-four{
+        width: 50%;
+      }
+
+
+  }//end of row 
+
+
+
+
+} //end of gallery curly braces
+
+
+/*
+    End of Gallery
+*/
+
+// Start of Footer
+
+
+footer{
+  background: #72ceb7;
+  height: 360px;
+
+  .footer-logo{
+      padding: 3rem;
+
+      h1{
+          text-align: center;
+          font-family: $fraunces;
+          text-transform: lowercase;
+          font-weight: $bold-900;
+          font-size: 2.5rem;
+          color: #174f41;
+      }
+  }
+
+  .menu{
+      display: flex;
+      justify-content: center;
+       padding: 2rem;
+
+      li{
+          list-style: none;
+          padding: 1rem;
+
+          a{
+              text-decoration: none;
+              color: $footer;
+              font-family: $barlow;
+              font-size: 1.3rem;
+              font-weight: $font-600;
+          }
+      }
+  }
+
+  .icon-contact{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      padding: 2rem;
+
+      li{
+          list-style: none;
+          padding: 1rem;
+
+          img{
+              width: 26px;
+          }
+      }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} // @media query end of curly braces
