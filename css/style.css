@@ -812,7 +812,7 @@ footer .contact-icon li img {
     display: contents !important;
   }
   .transform {
-    height: 400px;
+    height: 350px;
   }
   .transform .row {
     display: -webkit-box;
@@ -835,19 +835,20 @@ footer .contact-icon li img {
     width: 50%;
   }
   .transform .row .col-one h2 {
-    padding: 2rem 0 1rem 2rem;
-    font-size: 1.5rem;
+    padding: 4rem 0 1rem 2rem;
+    font-size: 2rem;
   }
   .transform .row .col-one p {
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     text-align: center;
   }
   .transform .row .col-one .learn-more {
-    padding: 2rem 0 0 4rem;
+    padding: 2rem 0 0 7rem;
   }
   .transform .row .col-two {
     width: 50%;
-    background-position: center top;
+    background-position: center center;
+    background-size: cover;
   }
   .transform .row .col-three {
     display: none;
