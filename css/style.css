@@ -691,7 +691,7 @@ footer .contact-icon li img {
   }
 }
 
-@media screen and (max-width: 991px) and (min-width: 769px) {
+@media screen and (max-width: 991px) and (min-width: 800px) {
   .transform .row .col-one {
     width: 50%;
     height: 500px;
@@ -792,6 +792,183 @@ footer .contact-icon li img {
   .gallery .row .gallery-one {
     width: 50%;
     background-position: bottom;
+  }
+  .gallery .row .gallery-two {
+    width: 50%;
+  }
+  .gallery .row .gallery-three {
+    width: 50%;
+  }
+  .gallery .row .gallery-four {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 621px) {
+  .main-hero nav ul {
+    display: none;
+  }
+  .main-hero .hamburger {
+    display: contents !important;
+  }
+  .transform {
+    height: 400px;
+  }
+  .transform .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .transform .row .col-one {
+    display: contents;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  .transform .row .col-one h2 {
+    padding: 2rem 0 1rem 2rem;
+    font-size: 1.5rem;
+  }
+  .transform .row .col-one p {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .transform .row .col-one .learn-more {
+    padding: 2rem 0 0 4rem;
+  }
+  .transform .row .col-two {
+    width: 50%;
+    background-position: center top;
+  }
+  .transform .row .col-three {
+    display: none;
+  }
+  .transform .row .col-three h2 {
+    text-align: center;
+    padding: 5rem 2rem 0.9rem 2rem;
+    color: #23303e;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .transform .row .col-three p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    color: #a7abae;
+    padding: 1rem 2rem;
+    line-height: 23px;
+  }
+  .transform .row .col-three .learn-more {
+    padding: 2rem 0 3rem 0;
+    color: #23303e;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-decoration: underline 4px #fad400;
+            text-decoration: underline 4px #fad400;
+  }
+  .transform .row .col-three .learn-more:hover {
+    -webkit-text-decoration: underline dotted 6px #e8bb0a;
+            text-decoration: underline dotted 6px #e8bb0a;
+  }
+  /*
+End of Transform Section
+
+*/
+  .stand-out .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .stand-out .row .col-one {
+    background: url("../images/mobile/image-stand-out.jpg");
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .stand-out .row .col-two {
+    height: 350px;
+  }
+  .stand-out .row .col-two h2 {
+    text-align: center;
+    padding: 5rem 2rem 0.9rem 2rem;
+    color: #23303e;
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size: 2rem;
+  }
+  .stand-out .row .col-two p {
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    color: #a7abae;
+    padding: 1rem 1.5rem;
+    line-height: 23px;
+  }
+  .stand-out .row .col-two .learn-more {
+    padding: 2rem 0 1rem 0;
+  }
+  /*
+End of Stand Out
+
+*/
+  .design-content .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .design-content .row .graphics-content {
+    height: 500px;
+  }
+  .design-content .row .graphics-content h3 {
+    padding-top: 17rem;
+  }
+  .design-content .row .graphics-content p {
+    padding-bottom: -3rem;
+  }
+  .design-content .row .photography-content {
+    height: 500px;
+  }
+  .design-content .row .photography-content h3 {
+    padding-top: 17rem;
+  }
+  .design-content .row .photography-content p {
+    padding-bottom: -3rem;
+  }
+  .testimoial .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimoial .row .testimonial-one h3 {
+    padding-bottom: 2rem;
+  }
+  .testimoial .row .testimonial-two h3 {
+    padding-bottom: 2rem;
+  }
+  .gallery .row .gallery-one {
+    width: 50%;
   }
   .gallery .row .gallery-two {
     width: 50%;

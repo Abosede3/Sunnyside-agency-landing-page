@@ -647,7 +647,7 @@ footer{
 }
 
 // breakpiont min-width 769
-@media  screen and (max-width: 991px) and (min-width: 769px) {
+@media  screen and (max-width: 991px) and (min-width: 800px) {
 
   .transform{
     .row{
@@ -789,6 +789,231 @@ footer{
   }
 
 }
+
+
+//BREAKPOINT FOR 799px
+
+@media screen and (max-width: 799px) and (min-width: 621px){
+
+  .main-hero{
+
+    nav{
+
+        ul{
+            display: none; 
+        }
+    }
+
+    .hamburger{
+      display: contents !important;
+    }
+  }
+
+  .transform{
+    height: 400px;
+      .row{
+        display: flex;
+        flex-direction: row;
+
+          .col-one{
+            display: contents;
+            display: flex;
+            flex-direction: column;
+             width: 50%;
+
+             h2{
+               padding: 2rem 0 1rem 2rem;
+               font-size: 1.5rem;
+             }
+             p{
+               padding: 2rem 1rem;
+               text-align: center;
+             }
+             .learn-more{
+               padding: 2rem 0 0 4rem;
+             }
+          }
+          .col-two{
+           width: 50%;
+           background-position: center top;
+
+          
+          }
+          .col-three{
+              display: none;
+
+        h2{
+            text-align: center;
+            padding: 5rem 2rem 0.9rem 2rem;
+            color: $Very-dark-desaturated-blue;
+            font-family: $fraunces;
+            font-weight: $bold-900;
+            font-size: 2rem;
+        }
+
+        p{
+            text-align: center;
+            font-family: $barlow;
+            color: $Grayish-blue;
+            padding: 1rem 2rem;
+            line-height: 23px;
+        }
+
+        .learn-more{
+          padding: 2rem 0 3rem 0;
+          color: $Very-dark-desaturated-blue;
+          font-size: 18px;
+          font-weight: 900;
+          text-align: center;
+          text-decoration: underline 4px $Yellow;
+        }
+        .learn-more:hover{
+          text-decoration: underline dotted 6px rgb(232, 187, 10);
+        } 
+        
+
+
+  }
+}
+}
+
+/*
+End of Transform Section
+
+*/
+
+
+//Start of Stand Out
+
+.stand-out{
+.row{
+  display: flex;
+  flex-direction: row;
+
+  .col-one{
+    background: url('../images/mobile/image-stand-out.jpg');
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .col-two{
+    height: 350px;
+    h2{
+        text-align: center;
+        padding: 5rem 2rem 0.9rem 2rem;
+        color: $Very-dark-desaturated-blue;
+        font-family: $fraunces;
+        font-weight: $bold-900;
+        font-size: 2rem;
+    }
+    p{
+        text-align: center;
+        font-family: $barlow;
+        color: $Grayish-blue;
+        padding: 1rem 1.5rem;
+        line-height: 23px;
+    }
+    .learn-more{
+        padding: 2rem 0 1rem 0 ;
+    }
+  }
+    
+
+}
+
+
+}
+
+/*
+End of Stand Out
+
+*/
+
+
+
+.design-content{
+.row{
+  display: flex;
+  flex-direction: column;
+
+    .graphics-content{
+      height: 500px;
+
+        h3{
+            padding-top: 17rem;
+        }
+        p{
+          padding-bottom: -3rem ;
+        }
+    }
+
+    .photography-content{
+      height: 500px;
+
+        h3{
+            padding-top: 17rem;
+        }
+        p{
+          padding-bottom: -3rem ;
+        }
+    }
+}
+}
+
+.testimoial{
+  .row{
+      display: flex;
+      flex-direction: column;
+
+          .testimonial-one{
+              h3{
+                  padding-bottom: 2rem;
+              }
+          }
+
+          .testimonial-two{
+            h3{
+                padding-bottom: 2rem;
+            }
+        }
+
+        
+  }
+}
+
+
+
+
+.gallery{
+
+ .row{
+  .gallery-one{
+    width: 50%;
+ }
+ .gallery-two{
+   width: 50%;
+ }
+ .gallery-three{
+   width: 50%;
+ }
+ .gallery-four{
+   width: 50%;
+ }
+ }
+}
+
+
+
+
+
+  
+}
+
+
+
+
 
 
 // BREAKPOINT FOR 521 MIN WIDTH
