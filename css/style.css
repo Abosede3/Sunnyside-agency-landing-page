@@ -1346,11 +1346,6 @@ End of Stand Out
       color: #fe7867;
     }
   }
-  .main-hero .arrow img {
-    top: 60px;
-    -webkit-animation: none;
-            animation: none;
-  }
   /*
  End of Main Header
 
@@ -1874,11 +1869,6 @@ End of Stand Out
     100% {
       color: #fe7867;
     }
-  }
-  .main-hero .arrow img {
-    top: 90px;
-    -webkit-animation: none;
-            animation: none;
   }
   .transform .row {
     display: -webkit-box;
