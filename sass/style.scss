@@ -791,6 +791,209 @@ footer{
 }
 
 
+// BREAKPOINT FOR 521 MIN WIDTH
+
+@media screen and (max-width:620px) and (min-width: 521px){
+  .main-hero{
+
+      nav{
+
+          ul{
+              display: none; 
+          }
+      }
+
+      .hamburger{
+        display: contents !important;
+      }
+    }
+
+    .transform{
+        .row{
+          display: flex;
+          flex-direction: column;
+            .col-one{
+              display: none;
+            }
+            .col-two{
+             width: 100%;
+             height: 400px;
+            }
+            .col-three{
+              display: contents;
+              height: 500px;
+              width: 100%;
+
+          h2{
+              text-align: center;
+              padding: 5rem 2rem 0.9rem 2rem;
+              color: $Very-dark-desaturated-blue;
+              font-family: $fraunces;
+              font-weight: $bold-900;
+              font-size: 2rem;
+          }
+
+          p{
+              text-align: center;
+              font-family: $barlow;
+              color: $Grayish-blue;
+              padding: 1rem 2rem;
+              line-height: 23px;
+          }
+
+          .learn-more{
+            padding: 2rem 0 3rem 0;
+            color: $Very-dark-desaturated-blue;
+            font-size: 18px;
+            font-weight: 900;
+            text-align: center;
+            text-decoration: underline 4px $Yellow;
+          }
+          .learn-more:hover{
+            text-decoration: underline dotted 6px rgb(232, 187, 10);
+          } 
+          
+
+
+    }
+  }
+}
+
+/*
+ End of Transform Section
+
+*/
+
+
+//Start of Stand Out
+
+.stand-out{
+  .row{
+    display: flex;
+    flex-direction: column;
+
+    .col-one{
+      background: url('../images/mobile/image-stand-out.jpg');
+      height: 350px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .col-two{
+      height: 350px;
+      h2{
+          text-align: center;
+          padding: 5rem 2rem 0.9rem 2rem;
+          color: $Very-dark-desaturated-blue;
+          font-family: $fraunces;
+          font-weight: $bold-900;
+          font-size: 2rem;
+      }
+      p{
+          text-align: center;
+          font-family: $barlow;
+          color: $Grayish-blue;
+          padding: 1rem 1.5rem;
+          line-height: 23px;
+      }
+      .learn-more{
+          padding: 2rem 0 1rem 0 ;
+      }
+    }
+      
+
+}
+
+
+}
+
+/*
+ End of Stand Out
+
+*/
+
+
+
+.design-content{
+  .row{
+    display: flex;
+    flex-direction: column;
+
+      .graphics-content{
+        height: 500px;
+
+          h3{
+              padding-top: 13rem;
+          }
+          p{
+            padding-bottom:3rem ;
+          }
+      }
+
+      .photography-content{
+        height: 500px;
+
+          h3{
+              padding-top: 13rem;
+          }
+          p{
+            padding-bottom:3rem ;
+          }
+      }
+  }
+}
+
+.testimoial{
+    .row{
+        display: flex;
+        flex-direction: column;
+
+            .testimonial-one{
+                h3{
+                    padding-bottom: 2rem;
+                }
+            }
+
+            .testimonial-two{
+              h3{
+                  padding-bottom: 2rem;
+              }
+          }
+
+          
+    }
+}
+
+
+
+
+.gallery{
+
+   .row{
+    .gallery-one{
+      width: 50%;
+   }
+   .gallery-two{
+     width: 50%;
+   }
+   .gallery-three{
+     width: 50%;
+   }
+   .gallery-four{
+     width: 50%;
+   }
+   }
+}
+
+
+
+
+
+
+
+  }
+
 
 
 
@@ -805,6 +1008,10 @@ footer{
       MMOBILE VOEW 375PX RESPONSIVENESE
 
 */
+
+
+
+
 
 
 @media screen and(max-width: 375px){
@@ -983,14 +1190,6 @@ footer{
         }
       }
 
-      // .col-one-mobile{
-      //   display: contents;
-      //   background: url('../images/mobile/image-stand-out.jpg');
-      //   height: 350px;
-      //   background-position: center;
-      //   background-repeat: no-repeat;
-      //   background-size: cover;
-      // }
         
 
   }
@@ -1337,7 +1536,7 @@ footer{
 
 
 // END OF breakpoint min-width 769px
-@media screen and (max-width: 500px) and (min-width: 376px){
+@media screen and (max-width: 520px) and (min-width: 376px){
   .main-hero{
     background: url("../images/mobile/image-header.jpg");
     background-position: bottom;
@@ -1349,7 +1548,7 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 3.5rem 2rem 1rem 2rem;
+        padding: 1.5rem 2rem 1rem 2rem;
   
             ul{
                 display: none;
@@ -1364,7 +1563,7 @@ footer{
       }
 
       .hero-title{
-        padding: 1rem 0 2rem 0;
+        padding: 2.9rem 0 2rem 0;
         h2{
           font-size: 3rem;
           letter-spacing: 4px;
@@ -1429,7 +1628,7 @@ footer{
 
   .col-three{
     display: contents;
-      height: 400px;
+      height: 450px;
 
           h2{
               text-align: center;
@@ -1449,7 +1648,7 @@ footer{
           }
 
           .learn-more{
-            padding: 2rem 0 2rem 0;
+            padding: 2rem 0 3.5rem 0;
             color: $Very-dark-desaturated-blue;
             font-size: 18px;
             font-weight: 900;
@@ -1535,7 +1734,7 @@ footer{
 
       .graphics-content{
           background: url('../images/mobile/image-graphic-design.jpg');
-          height: 600px;
+          height: 650px;
           background-position: top center;
           background-size: cover;
           background-repeat: no-repeat;
@@ -1548,13 +1747,13 @@ footer{
               font-family: $fraunces;
               font-size: 2rem;
               color: $graphic-text;
-              padding-top: 15rem;
+              padding-top: 2rem;
           }
 
           p{
               text-align: center;
-              padding-bottom: 4.5rem;
-              padding-top: 1.4rem;
+              padding-bottom: 5rem;
+              padding-top: 2em;
               padding-right: 1rem;
               padding-left: 1rem;
               color: $graphic-text;
@@ -1719,7 +1918,6 @@ footer{
       justify-content: center;
       align-items: center;
       align-content: center;
-      padding-bottom: 6rem;
 
             img{
                 border-radius: 50%;
@@ -1853,10 +2051,8 @@ footer{
 
 
 
+} // End of max-width : 500px
 
 
-
-
-}
 
 
