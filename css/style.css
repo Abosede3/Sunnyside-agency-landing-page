@@ -93,6 +93,10 @@ body {
   color: white;
 }
 
+.main-hero nav ul .close-menu {
+  display: none;
+}
+
 .main-hero nav .hamburger {
   display: none;
 }
@@ -692,6 +696,9 @@ footer .contact-icon li img {
 }
 
 @media screen and (max-width: 991px) and (min-width: 800px) {
+  .main-hero nav ul .close-menu {
+    display: none;
+  }
   .transform .row .col-one {
     width: 50%;
     height: 500px;
@@ -806,10 +813,54 @@ footer .contact-icon li img {
 
 @media screen and (max-width: 799px) and (min-width: 621px) {
   .main-hero nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #23303e;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  .main-hero nav ul li {
+    padding: 1rem 0;
+  }
+  .main-hero nav ul li a {
+    -webkit-text-decoration: underline 2px "Barlow", sans-serif !important;
+            text-decoration: underline 2px "Barlow", sans-serif !important;
+  }
+  .main-hero nav ul li a:hover {
+    color: #fad400;
+  }
+  .main-hero nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .main-hero nav ul .close-menu i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .main-hero nav ul .close-menu i:hover {
+    color: #fad400;
   }
   .main-hero .hamburger {
     display: contents !important;
+    cursor: pointer;
   }
   .transform {
     height: 350px;
@@ -984,10 +1035,53 @@ End of Stand Out
 
 @media screen and (max-width: 620px) and (min-width: 521px) {
   .main-hero nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #23303e;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  .main-hero nav ul li {
+    padding: 1rem 0;
+  }
+  .main-hero nav ul li a {
+    -webkit-text-decoration: underline 2px "Barlow", sans-serif !important;
+            text-decoration: underline 2px "Barlow", sans-serif !important;
+  }
+  .main-hero nav ul li a:hover {
+    color: #fad400;
+  }
+  .main-hero nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .main-hero nav ul .close-menu i {
+    color: white;
+    font-size: 35px;
+  }
+  .main-hero nav ul .close-menu i:hover {
+    color: #fad400;
   }
   .main-hero .hamburger {
     display: contents !important;
+    cursor: pointer;
   }
   .transform .row {
     display: -webkit-box;
@@ -1166,11 +1260,56 @@ End of Stand Out
     padding: 2.5rem 2rem 1rem 2rem;
   }
   .main-hero nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #23303e;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  .main-hero nav ul li {
+    padding: 1rem 0;
+  }
+  .main-hero nav ul li a {
+    -webkit-text-decoration: underline 2px "Barlow", sans-serif !important;
+            text-decoration: underline 2px "Barlow", sans-serif !important;
+  }
+  .main-hero nav ul li a:hover {
+    color: #fad400;
+  }
+  .main-hero nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .main-hero nav ul .close-menu i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .main-hero nav ul .close-menu i:hover {
+    color: #25564b;
   }
   .main-hero nav .hamburger {
     cursor: pointer;
     display: contents;
+    display: block;
   }
   .main-hero .hero-title {
     padding: 1rem 0;
@@ -1651,7 +1790,51 @@ End of Stand Out
     padding: 1.5rem 2rem 1rem 2rem;
   }
   .main-hero nav ul {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #23303e;
+    -webkit-transition: top 1s ease;
+    transition: top 1s ease;
     display: none;
+  }
+  .main-hero nav ul li {
+    padding: 1rem 0;
+  }
+  .main-hero nav ul li a {
+    -webkit-text-decoration: underline 2px "Barlow", sans-serif !important;
+            text-decoration: underline 2px "Barlow", sans-serif !important;
+  }
+  .main-hero nav ul li a:hover {
+    color: #fad400;
+  }
+  .main-hero nav ul .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .main-hero nav ul .close-menu i {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .main-hero nav ul .close-menu i:hover {
+    color: #fad400;
   }
   .main-hero .hamburger {
     cursor: pointer;

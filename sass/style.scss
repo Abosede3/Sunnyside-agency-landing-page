@@ -93,6 +93,10 @@ body{
                     color: $White;
                   }
               }
+
+              .close-menu{
+                display: none;
+              }
               
           }
           
@@ -648,6 +652,16 @@ footer{
 
 // breakpiont min-width 769
 @media  screen and (max-width: 991px) and (min-width: 800px) {
+  .main-hero{
+    nav{
+      ul{
+        .close-menu{
+          display: none;
+        }
+      }
+    }
+  }
+
 
   .transform{
     .row{
@@ -799,13 +813,54 @@ footer{
 
     nav{
 
-        ul{
-            display: none; 
+      ul{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $Very-dark-desaturated-blue;
+        transition: top 1s ease;
+        display: none;
+
+        li{
+          padding: 1rem 0;
+
+          a{
+            text-decoration: underline 2px $barlow !important;
+          }
+          a:hover{
+            color:$Yellow;
+          }
+
         }
+        .close-menu{
+          display: block;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+
+            i{
+              color: $White;
+              font-size: 35px;
+              cursor: pointer;
+
+            }
+            i:hover{
+              color: $Yellow;
+            }
+        }
+
+      }
     }
 
     .hamburger{
       display: contents !important;
+      cursor: pointer;
     }
   }
 
@@ -1024,13 +1079,53 @@ End of Stand Out
 
       nav{
 
-          ul{
-              display: none; 
+        ul{
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: $Very-dark-desaturated-blue;
+          transition: top 1s ease;
+          display: none;
+
+          li{
+            padding: 1rem 0;
+
+            a{
+              text-decoration: underline 2px $barlow !important;
+            }
+            a:hover{
+              color:hsl(51, 100%, 49%)
+            }
+
           }
+          .close-menu{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+              i{
+                color: $White;
+                font-size: 35px;
+
+              }
+              i:hover{
+                color: $Yellow;
+              }
+          }
+
+        }
       }
 
       .hamburger{
         display: contents !important;
+        cursor: pointer;
       }
     }
 
@@ -1257,15 +1352,61 @@ End of Stand Out
       padding: 2.5rem 2rem 1rem 2rem;
 
           ul{
-              display: none;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 10;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $Very-dark-desaturated-blue;
+            transition: top 1s ease;
+            display: none;
+
+            li{
+              padding: 1rem 0;
+
+              a{
+                text-decoration: underline 2px $barlow !important;
+              }
+
+              a:hover{
+                color: $Yellow;
+              }
+
+            }
+            .close-menu{
+              display: block;
+              position: absolute;
+              top: 20px;
+              right: 20px;
+              cursor: pointer;
+
+                i{
+                  color: $White;
+                  font-size: 35px;
+                  cursor: pointer;
+
+                }
+                i:hover{
+                  color: $graphic-text;
+                }
+            }
+
           }
 
           .hamburger{
               cursor: pointer;
               display: contents;
+              display: block;
           }
 
+
+
     }
+
 
     .hero-title{
       padding: 1rem 0;
@@ -1776,9 +1917,49 @@ footer{
         justify-content: space-between;
         padding: 1.5rem 2rem 1rem 2rem;
   
-            ul{
-                display: none;
+        ul{
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          right: 0;
+          left: 0;
+          z-index: 10;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: $Very-dark-desaturated-blue;
+          transition: top 1s ease;
+          display: none;
+
+          li{
+            padding: 1rem 0;
+
+            a{
+              text-decoration: underline 2px $barlow !important;
             }
+            a:hover{
+              color: $Yellow;
+            }
+          }
+          .close-menu{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+
+              i{
+                color: $White;
+                font-size: 35px;
+                cursor: pointer;
+
+              }
+              i:hover{
+                color: $Yellow;
+              }
+          }
+
+        }
       }
 
       .hamburger{
